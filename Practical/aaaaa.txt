@@ -1,0 +1,2 @@
+client id = 2535178
+login email = riyachhag24@gmail.com

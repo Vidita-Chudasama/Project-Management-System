@@ -1,0 +1,33 @@
+1 => mysqli_fetch_assoc
+
+Array ( [uid] => 1 [username] => Ravi [password] => ed0b6f08716e308531abb66767bef3b1 [address] => Peyknolink Junagadh [email] => ravijadejainfo@gmail.com
+ [gender] => Male [hobby] => Read,Write,Play [photo] => Profile/69.jpg [city] => 1 )
+
+echo $data["username"];
+
+
+
+2 =>mysqli_fetch_array
+
+Array ( [0] => 1 [uid] => 1 [1] => Ravi [username] => Ravi [2] => ed0b6f08716e308531abb66767bef3b1 [password] => ed0b6f08716e308531abb66767bef3b1 
+[3] => Peyknolink Junagadh [address] => Peyknolink Junagadh [4] => ravijadejainfo@gmail.com [email] => ravijadejainfo@gmail.com [5] => Male [gender] => Male 
+[6] => Read,Write,Play [hobby] => Read,Write,Play [7] => Profile/69.jpg [photo] => Profile/69.jpg [8] => 1 [city] => 1 )
+
+echo $data["username"] or $data[1] ;
+
+
+
+3 => mysqli_fetch_object
+
+stdClass Object ( [uid] => 1 [username] => Ravi [password] => ed0b6f08716e308531abb66767bef3b1 [address] => Peyknolink Junagadh 
+[email] => ravijadejainfo@gmail.com [gender] => Male [hobby] => Read,Write,Play [photo] => Profile/69.jpg [city] => 1 )
+ 
+echo $data->username;
+
+
+
+4 =>mysqli_fetch_row
+
+Array ( [0] => 1 [1] => Ravi [2] => ed0b6f08716e308531abb66767bef3b1 [3] => Peyknolink Junagadh [4] => ravijadejainfo@gmail.com [5] => Male [6] => Read,Write,Play [7] => Profile/69.jpg [8] => 1 )
+
+echo $data[1];
